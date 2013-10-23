@@ -1,4 +1,6 @@
 Pokerlogger::Application.routes.draw do
+  root to: 'sessions#index'
+  
   get 'sessions' => 'sessions#index'
 
   #Create empty session to fill in

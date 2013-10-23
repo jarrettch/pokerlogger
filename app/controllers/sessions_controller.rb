@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
 
   def create
     @session = Session.create(params[:session].permit(:date_played, :location, :game_type, :stakes, :hours_played, :profit_or_loss, :notes))
-    redirect_to :action => 'show', :id =>@team._id
+    redirect_to :action => 'show', :id =>@session._id
   end
 
   def destroy

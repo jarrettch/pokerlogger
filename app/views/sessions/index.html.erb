@@ -1,0 +1,15 @@
+<h1>Poker Log Homepage</h1>
+
+<ul>
+<% sessions.each do |sesh| %>
+  <li>
+    <%= sesh.date_played %>
+    <%= sesh.location %>
+    <%= sesh.game_type %>
+    <%= sesh.stakes %>
+    <%= sesh.hours_played %>
+    <%= sesh.profit_or_loss %>
+    <%= sesh.notes %>
+  </li>
+<% end %>
+</ul>
