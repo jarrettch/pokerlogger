@@ -2,7 +2,7 @@
 
 <%= form_for @session do |session|%>
   <%= session.label :date_played, "Date Played" %>
-  <%= session.text_field :date_played %>
+  <%= session.date_select :date_played %>
   <br />
 
   <%= session.label :location, "Location" %>

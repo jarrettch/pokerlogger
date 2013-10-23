@@ -1,7 +1,7 @@
 class Session
   include Mongoid::Document
   
-  field :date_played, type: DateTime
+  field :date_played, type: Date
   field :location, type: String
   field :game_type, type: String
   field :stakes, type: String
