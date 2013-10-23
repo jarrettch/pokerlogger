@@ -11,4 +11,4 @@
 #= require_tree ./directives/global
 #= require_tree ./directives/main
 
-Blog = angular.module('Blog', [])
+PokerLog = angular.module('PokerLog', [])
