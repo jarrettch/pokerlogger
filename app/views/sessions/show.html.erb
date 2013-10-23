@@ -1,3 +1,10 @@
 <h1>Display Session Details</h1>
-
-<%= @session.location %>
+<ul>
+    <li><%= @session.date_played %></li>
+    <li><%= @session.location %></li>
+    <li><%= @session.game_type %></li>
+    <li><%= @session.stakes %></li>
+    <li><%= @session.hours_played %></li>
+    <li><%= @session.profit_or_loss %></li>
+    <li><%= @session.notes %></li>
+</ul>

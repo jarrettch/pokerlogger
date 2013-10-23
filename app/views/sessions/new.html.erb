@@ -1,6 +1,36 @@
 <h1>New Session Form</h1>
 
 <%= form_for @session do |session|%>
+  <%= session.label :date_played, "Date Played" %>
+  <%= session.text_field :date_played %>
+  <br />
+
   <%= session.label :location, "Location" %>
-  <%= session.text_field :location%>
+  <%= session.text_field :location %>
+  <br />
+
+  <%= session.label :game_type, "Game Type" %>
+  <%= session.text_field :game_type %>
+  <br />
+
+  <%= session.label :stakes, "Stakes" %>
+  <%= session.text_field :stakes %>
+  <br />
+
+  <%= session.label :hours_played, "Hours Played" %>
+  <%= session.text_field :hours_played %>
+  <br />
+
+
+  <%= session.label :profit_or_loss, "Profit or Loss" %>
+  <%= session.text_field :profit_or_loss %>
+  <br />
+
+
+  <%= session.label :notes, "Notes" %>
+  <%= session.text_field :notes %>
+  <br />
+
+  <%= session.submit %>
+
 <% end %>
