@@ -1,5 +1,6 @@
 class Session
   include Mongoid::Document
+  include Mongoid::Attributes::Dynamic
   
   field :date_played, type: Date
   field :location, type: String
@@ -8,6 +9,5 @@ class Session
   field :hours_played, type: Float
   field :profit_or_loss, type: Float
   field :notes, type: String
-
 
 end

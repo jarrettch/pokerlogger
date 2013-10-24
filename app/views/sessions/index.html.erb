@@ -3,7 +3,7 @@
 <ul>
 <% @sessions.each do |sesh| %>
   <li>
-    <%= sesh.date_played %>
+    <%= sesh.date_played.strftime('%m/%d/%Y') %>
     <%= sesh.location %>
     <%= sesh.game_type %>
     <%= sesh.stakes %>
