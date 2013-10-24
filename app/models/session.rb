@@ -1,6 +1,5 @@
 class Session
   include Mongoid::Document
-  include Mongoid::Attributes::Dynamic
   
   field :date_played, type: Date
   field :location, type: String
