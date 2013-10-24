@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   def destroy
     Session.find(params[:id]).destroy
-    redirect_to teams_url
+    redirect_to sessions_url
   end
 
 end

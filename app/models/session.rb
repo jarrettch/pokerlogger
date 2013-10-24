@@ -10,5 +10,4 @@ class Session
   field :profit_or_loss, type: Float
   field :notes, type: String
 
-
 end

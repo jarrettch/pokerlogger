@@ -1,0 +1,15 @@
+<h1>Sign In!</h1>
+
+<%= form_for @user, {url:"/authentications", method:"post"} do |user| %>
+  <%= user.label :email, "Email" %>
+  <%= user.text_field :email, placeholder: "Email" %>
+  <br />
+
+  <%= user.label :password, "Password" %>
+  <%= user.password_field :password, placeholder: "Password" %>
+  <br />
+
+  <%= user.submit "Sign In" %>
+  <a href="/users/new">New User? Sign up now!</a>
+
+<% end %>
